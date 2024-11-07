@@ -3,11 +3,14 @@
 
 
 /* a queue contains positive integer values. */
-typedef struct Queue
+struct Queue 
 {
-	// Complete the definition here
-	
-} Queue;
+    int* data;
+    int first;
+    int last;
+    unsigned int size;
+    int max;
+};
 
 void initQueue(Queue* q, unsigned int size);
 void cleanQueue(Queue* q);
