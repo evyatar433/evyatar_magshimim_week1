@@ -60,7 +60,7 @@ bool isEmpty(Queue* q)
     return q->size == 0;
 }
 
-//check if queue full
+// check if queue full
 bool isFull(Queue* q) 
 {
     return q->size == q->max;
@@ -80,8 +80,8 @@ int main()
     std::cout << "Dequeued: " << dequeue(&q) << std::endl; // 10
 
 
-    enqueue(&q, 7);  // queue is full!
+    enqueue(&q, 7);
 
-    cleanQueue(&q);  // delete memory and reset the queue
+    cleanQueue(&q); 
     return 0;
 }

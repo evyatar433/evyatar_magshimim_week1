@@ -1,22 +1,24 @@
 #ifndef STACK_H
-#define STA 
+#define STACK_H
 
-/* a positive-integer value stack, with no size limit */
-typedef struct Stack
+struct Stack
 {
-    unsigned int* _elements;
-    int _maxSize;
-    int _count;
+    int number;
+    Stack* next;
 
-} Stack;
+    Stack(int num) : number(num), next(nullptr) {}
+};
 
-void push(Stack* s, unsigned int element);
-int pop(Stack* s); // Return -1 if stack is empty
+// Function to add a node at the beginning of the list
+Stack* push(Stack* head, int number);
 
-void initStack(Stack* s);
-void cleanStack(Stack* s);
 
-bool isEmpty(Stack* s);
-bool isFull(Stack* s);
+//int pop(Stack* s); // Return -1 if stack is empty
+//
+//void initStack(Stack* s);
+//void cleanStack(Stack* s);
+//
+//bool isEmpty(Stack* s);
+//bool isFull(Stack* s);
 
 #endif // STACK_H

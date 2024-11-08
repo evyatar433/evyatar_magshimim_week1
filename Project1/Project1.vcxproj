@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8a01ed22-e051-4e0e-ba43-d5fd677b0d7e}</ProjectGuid>
-    <RootNamespace>evyatarweek1</RootNamespace>
+    <ProjectGuid>{3a0cb0f8-20ae-4bf2-ac9c-734822871967}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>queue</ProjectName>
+    <ProjectName>LinkedList</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -105,7 +105,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>Queue.h;Stack.h;Utils.h</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,11 +128,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main1.cpp" />
-    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="..\stack\LinkedList.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Queue.h" />
+    <ClInclude Include="..\stack\LinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

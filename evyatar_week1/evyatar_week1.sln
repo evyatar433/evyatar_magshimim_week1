@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "evyatar_week1", "evyatar_week1.vcxproj", "{8A01ED22-E051-4E0E-BA43-D5FD677B0D7E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "queue", "evyatar_week1.vcxproj", "{8A01ED22-E051-4E0E-BA43-D5FD677B0D7E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stack", "..\stack\stack.vcxproj", "{11AA9A3F-2C20-49A0-A1DE-79AC6E2D224D}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utils", "..\Utils\Utils.vcxproj", "{2E722F44-7556-4DE0-B2B1-D22BCCF3B397}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedList", "..\Project1\Project1.vcxproj", "{3A0CB0F8-20AE-4BF2-AC9C-734822871967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{2E722F44-7556-4DE0-B2B1-D22BCCF3B397}.Release|x64.Build.0 = Release|x64
 		{2E722F44-7556-4DE0-B2B1-D22BCCF3B397}.Release|x86.ActiveCfg = Release|Win32
 		{2E722F44-7556-4DE0-B2B1-D22BCCF3B397}.Release|x86.Build.0 = Release|Win32
+		{3A0CB0F8-20AE-4BF2-AC9C-734822871967}.Debug|x64.ActiveCfg = Debug|x64
+		{3A0CB0F8-20AE-4BF2-AC9C-734822871967}.Debug|x64.Build.0 = Debug|x64
+		{3A0CB0F8-20AE-4BF2-AC9C-734822871967}.Debug|x86.ActiveCfg = Debug|Win32
+		{3A0CB0F8-20AE-4BF2-AC9C-734822871967}.Debug|x86.Build.0 = Debug|Win32
+		{3A0CB0F8-20AE-4BF2-AC9C-734822871967}.Release|x64.ActiveCfg = Release|x64
+		{3A0CB0F8-20AE-4BF2-AC9C-734822871967}.Release|x64.Build.0 = Release|x64
+		{3A0CB0F8-20AE-4BF2-AC9C-734822871967}.Release|x86.ActiveCfg = Release|Win32
+		{3A0CB0F8-20AE-4BF2-AC9C-734822871967}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
