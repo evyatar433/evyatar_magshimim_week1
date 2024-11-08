@@ -8,26 +8,29 @@ struct Queue {
     unsigned int max;  // maximum size of the queue
 };
 
-void initQueue(Queue* q, unsigned int size) {
+// init the queue
+void initQueue(Queue* q, unsigned int size) 
+{
     q->data = new int[size];
     q->first = 0;
     q->last = 0;
     q->size = 0;
     q->max = size;
 }
-
-void cleanQueue(Queue* q) {
+// clean the queue
+void cleanQueue(Queue* q) 
+{
     delete[] q->data;  // free the memory
     q->data = nullptr;
     q->first = 0;
     q->last = 0;
     q->size = 0;
 }
-
 // add somthing to the queue
 void enqueue(Queue* q, unsigned int newValue) 
 {
-    if (q->size == q->max) {
+    if (q->size == q->max) 
+    {
         std::cout << "Queue is full!" << std::endl;
         return;
     }
@@ -37,8 +40,10 @@ void enqueue(Queue* q, unsigned int newValue)
 }
 
 // remove somthing from the queue
-int dequeue(Queue* q) {
-    if (q->size == 0) {
+int dequeue(Queue* q) 
+{
+    if (q->size == 0) 
+    {
         std::cout << "Queue is empty!" << std::endl;
         return -1;  
     }
@@ -48,16 +53,21 @@ int dequeue(Queue* q) {
     q->size--;
     return value;
 }
+
 // check if queue empty
-bool isEmpty(Queue* q) {
+bool isEmpty(Queue* q) 
+{
     return q->size == 0;
 }
+
 //check if queue full
-bool isFull(Queue* q) {
+bool isFull(Queue* q) 
+{
     return q->size == q->max;
 }
 
-int main() {
+int main() 
+{
     Queue q;
     initQueue(&q, 5);
 
@@ -67,10 +77,10 @@ int main() {
     enqueue(&q, 4);
     enqueue(&q, 5);
 
-    std::cout << "Dequeued: " << dequeue(&q) << std::endl;  //10
+    std::cout << "Dequeued: " << dequeue(&q) << std::endl; // 10
 
 
-    enqueue(&q, 7);  //"queue is full!"
+    enqueue(&q, 7);  // queue is full!
 
     cleanQueue(&q);  // delete memory and reset the queue
     return 0;

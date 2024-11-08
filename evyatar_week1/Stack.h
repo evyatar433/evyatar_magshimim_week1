@@ -1,6 +1,5 @@
 #ifndef STACK_H
-#define STACK_H
-
+#define STA 
 
 /* a positive-integer value stack, with no size limit */
 typedef struct Stack
