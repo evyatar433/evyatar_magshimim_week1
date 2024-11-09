@@ -31,7 +31,6 @@ int main()
     }
     std::cout << std::endl;
 
-    // clean memory 
     cleanStack(head);
     head = nullptr;
 
