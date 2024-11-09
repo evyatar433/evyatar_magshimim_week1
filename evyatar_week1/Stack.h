@@ -9,6 +9,14 @@ struct Stack
     Stack(int num) : number(num), next(nullptr) {}
 };
 
+
+Stack* push(Stack* head, int number) {
+    Stack* newNode = new Stack(number);
+    newNode->next = head;
+    head = newNode;
+    return head;
+}
+
 // Function to add a node at the beginning of the list
 Stack* push(Stack* head, int number);
 

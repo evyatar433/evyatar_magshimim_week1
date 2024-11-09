@@ -11,7 +11,7 @@ Node* addNode(Node* head, int number)
 }
 
 
-// function will delete a node by value
+// function will delete a node 
 Node* removeNode(Node* head) 
 {
     if (head == nullptr) 
@@ -25,6 +25,7 @@ Node* removeNode(Node* head)
 }
 
 int main()
+
 {
     Node* head = nullptr;
 

@@ -1,12 +1,6 @@
 #include <iostream>
 
-struct Queue {
-    int* data; // queue data
-    int first; // first queue object
-    int last; // last queue object
-    unsigned int size;  //size of queue
-    unsigned int max;  // maximum size of the queue
-};
+#include "Queue.h"
 
 // init the queue
 void initQueue(Queue* q, unsigned int size) 
@@ -44,7 +38,7 @@ int dequeue(Queue* q)
 {
     if (q->size == 0) 
     {
-        std::cout << "Queue is empty!" << std::endl;
+        std::cout << "queue is empty" << std::endl;
         return -1;  
     }
     int value = q->data[q->first];
@@ -66,22 +60,3 @@ bool isFull(Queue* q)
     return q->size == q->max;
 }
 
-int main() 
-{
-    Queue q;
-    initQueue(&q, 5);
-
-    enqueue(&q, 1);
-    enqueue(&q, 2);
-    enqueue(&q, 3);
-    enqueue(&q, 4);
-    enqueue(&q, 5);
-
-    std::cout << "Dequeued: " << dequeue(&q) << std::endl; // 10
-
-
-    enqueue(&q, 7);
-
-    cleanQueue(&q); 
-    return 0;
-}

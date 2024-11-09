@@ -1,21 +1,23 @@
 #ifndef STACK_H
 #define STACK_H
 
-#include "LinkedList.h"
-
-/* a positive-integer value stack, with no size limit */
-typedef struct Stack
+struct Stack
 {
-	// Complete Definition here
-} Stack;
+    int element;
+    int size;
+    Stack* next;
 
-void push(Stack* s, unsigned int element);
-int pop(Stack* s); // Return -1 if stack is empty
+    Stack(int num) : element(num), next(nullptr) {}
+};
 
-void initStack(Stack* s);
-void cleanStack(Stack* s);
+// function will add node
+Stack* push(Stack* head, int element);
+
+// function will delete the last added node
+Stack* pop(Stack* s);
 
 bool isEmpty(Stack* s);
-bool isFull(Stack* s);
+
+void cleanStack(Stack* s);
 
 #endif // STACK_H
